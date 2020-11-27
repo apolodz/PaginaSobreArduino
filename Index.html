@@ -1,13 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="utf-8">
 
 <head>
+    <!--Nav-->
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="ArduinoLogo.png" rel="stylesheet">
+    <!--Container-->
+    <link rel="stylesheet" href="css/container.css">
+
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/a8e6bc75d7.js" crossorigin="anonymous"></script>
+
+    <!--Menu.js-->
+    <script src="js/nav.js"></script>
     <meta charset="utf-8">
+    <title>Arduino</title>
 
 </head>
 
 <body>
+    <!--Menu-->
+    <a href="#" class="MenuIcon" onclick="MostrarMenu()"><i class="fas fa-bars fa-2x"></i></a>
+    <nav>
+        <ul id="Navbar">
+            <li>
+                <a class="tirarfundo" href="Index.html"><img src="Imagens/ArduinoLogo.png" id="Logotipo"></a>
+            </li>
+
+            <li><a class="active" href="Index.html">Home</a></li>
+            <li><a href="#comp">Componentes</a></li>
+            <li><a href="#hist">História</a></li>
+            <li><a href="#about">Sobre nós</a></li>
+        </ul>
+    </nav>
+    <!--Conteudo-->
+    <div class='container' id="container">
+        <h1 class="Titulos">Arduino</h1>
+        <div class="row">
+            <div class="divArduinoIMG">
+                <img src="Imagens/ArduinoIMG.png" class="ArduinoIMG">
+            </div>
+            <p class="ParagrafoArduino">
+                Arduino é uma plataforma de prototipagem eletrônica de hardware livre e de placa única, projetada com um microcontrolador Atmel AVR com suporte de entrada/saída embutido, uma linguagem de programação padrão, a qual tem origem em Wiring, e é essencialmente
+                C/C++
+            </p>
+        </div>
+    </div>
 
 </body>
-
-</html>

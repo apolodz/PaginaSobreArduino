@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+body {
+    margin: auto;
+    font-family: 'Dosis', sans-serif;
+}
+
+.MenuIcon {
+    display: none !important;
+}
+
+ul {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 17%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    background-color: #95b4e6;
+    letter-spacing: 3px;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a.active {
+    background-color: #259c80;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.tirarfundo {
+    background-color: #95b4e600;
+}
+
+.tirarfundo:hover:not(.active) {
+    background-color: #95b4e600;
+}
+
+#Logotipo {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 50% !important;
+}
+
+@media only screen and (max-width: 740px) {
+    .MenuIcon {
+        display: block !important;
+        margin: 10px;
+        width: 8%;
+        color: black;
+        position: relative;
+        float: right;
+    }
+    .MenuIcon:active {
+        color: rgba(0, 0, 0, 0.384)
+    }
+    nav ul {
+        display: none;
+    }
+    ul {
+        font-family: 'Dosis', sans-serif;
+        font-weight: bold;
+        list-style-type: none;
+        font-size: 11px;
+        margin: 0;
+        padding: 0;
+        width: 30%;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+        background-color: #95b4e6;
+    }
+}
